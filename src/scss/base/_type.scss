@@ -1,26 +1,26 @@
 $h1-font-sizes:(
-    null: 32px,
+    null: 30px,
     $screen-md: 36px,
     $screen-xl: 50px
 );
 $h2-font-sizes:(
-    null: 28px,
-    $screen-md: 28px, 
+    null: 24px,
+    $screen-md: 26px, 
     $screen-xl: 28px
 );
 $h3-font-sizes:(
-    null: 26px,
-    $screen-md: 24px,
+    null: 24px,
+    $screen-md: 26px,
     $screen-xl: 28px
 );
 $h4-font-sizes:(
-    null: 22px,
-    $screen-md: 20px,
+    null: 18px,
+    $screen-md: 18px,
     $screen-xl: 18px
 );
 $h5-font-sizes:(
     null: 18px,
-    $screen-md: 20px,
+    $screen-md: 18px,
     $screen-xl: 18px
 );
 $h6-font-sizes:(
@@ -48,41 +48,32 @@ h1, .h1 {
     @include font-size($h1-font-sizes);
     display: block;
     color: $white;
-    line-height: 71px;
-    letter-spacing: 25px;
     font-family: "Montserrat-Medium";
 }
 h2, .h2 {
     @include font-size($h2-font-sizes);
     display: block;
-    line-height: 40px;
-    letter-spacing: 50px;
     font-family: "Montserrat-Medium";
 }
 h3, .h3 {
     @include font-size($h3-font-sizes);
     display: block;
-    line-height: 40px;
-    letter-spacing: 50px;
     font-family: "Montserrat-SemiBold";
 }
 h4, .h4 {
     @include font-size($h4-font-sizes);
-    letter-spacing: 100px;
     font-family: "Montserrat-SemiBold";
 }
 h5, .h5 {
     @include font-size($h5-font-sizes);
-    line-height: 36px;
     font-family: "Montserrat-Regular";
 }
 h6, .h6 {
     @include font-size($h6-font-sizes);
-    line-height: 32px;
     font-family: "Montserrat-Regular";
     
 }
 p {
     @include font-size($p-font-sizes);
-    line-height: $line-height-base * 1.25;
+    line-height: $line-height-base;
 }

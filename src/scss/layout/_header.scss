@@ -1,0 +1,14 @@
+.header-wrap{
+    position: relative;
+}
+.header{
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    z-index: 10;
+    @include mq(md){
+        top: 70px; 
+    }
+}

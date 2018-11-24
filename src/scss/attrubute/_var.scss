@@ -12,9 +12,9 @@ $gray-10: #1a1a1a;
 $white:#fff;
 
 $body-color:    $white;
-$primary:       #0071bc !default;
-$secondary:     #00a99d !default;
-$third-color:   #444444;
+$primary:       #26af5f !default;
+$secondary:     #4a4747 !default;
+$third-color:   #303030;
 
 $text-color:    $third-color;
 
@@ -37,6 +37,8 @@ $line-height-sm:              1.5 !default;
 $font-family-sans-serif:      "Montserrat-SemiBold", 'Montserrat-Bold',-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $font-family-monospace:       'Montserrat-Regular', 'Montserrat-Light', Arial, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 $font-family-base:            $font-family-sans-serif;
+$font-family-Roboto-Regular:  'Roboto-Regular';
+$font-family-button:          'Montserrat-Light';
 
 
 $font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
