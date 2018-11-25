@@ -1,0 +1,7 @@
+.logo{
+    width: 41px;
+    height: auto;
+    @include mq(md){
+        width: 62px;
+    }
+}
