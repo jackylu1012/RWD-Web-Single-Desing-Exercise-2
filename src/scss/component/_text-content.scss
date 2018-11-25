@@ -1,7 +1,9 @@
 .text-content{
     text-align: center;
-    .title{
+    .title, .text{
         margin-bottom: 15px;
+    }
+    .title{
         color: $title-color;
         font-weight: inherit;
         letter-spacing: 2px;

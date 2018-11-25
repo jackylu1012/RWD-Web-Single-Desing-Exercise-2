@@ -1481,6 +1481,12 @@ p {
 .text-mt {
   margin-top: 30px; }
 
+.content-mar {
+  margin-top: 30px; }
+  @media (min-width: 767px) {
+    .content-mar {
+      margin-top: 100px; } }
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -1550,12 +1556,12 @@ h3, .title {
     padding-left: 0; }
 
 .padding-fluid {
-  padding-top: 30px;
-  padding-bottom: 30px; }
+  padding-top: 60px;
+  padding-bottom: 60px; }
   @media (min-width: 767px) {
     .padding-fluid {
-      padding-top: 70px;
-      padding-bottom: 70px; } }
+      padding-top: 90px;
+      padding-bottom: 90px; } }
   @media (min-width: 1199px) {
     .padding-fluid {
       padding-top: 120px;
@@ -1569,6 +1575,25 @@ h3, .title {
   @media (min-width: 1199px) {
     .padding-bottom-fluid {
       padding-bottom: 100px; } }
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 2px;
+  font-family: "Montserrat-Light";
+  border-radius: 4px;
+  transition: all 200ms; }
+  .btn-green {
+    background: #26af5f; }
+  .btn-effect {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: all 200ms; }
+    .btn-effect:hover, .btn-effect:focus, .btn-effect:active {
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); }
+  .btn:hover, .btn:focus, .btn:active {
+    transform: translateY(-3px); }
 
 .header-wrap {
   position: relative; }
@@ -1773,8 +1798,9 @@ h3, .title {
 
 .text-content {
   text-align: center; }
+  .text-content .title, .text-content .text {
+    margin-bottom: 15px; }
   .text-content .title {
-    margin-bottom: 15px;
     color: #4a4747;
     font-weight: inherit;
     letter-spacing: 2px; }
@@ -1787,11 +1813,7 @@ h3, .title {
 
 .service-content {
   padding-left: 10px;
-  padding-right: 10px;
-  margin-top: 30px; }
-  @media (min-width: 767px) {
-    .service-content {
-      margin-top: 100px; } }
+  padding-right: 10px; }
 
 .service-box {
   display: block;
@@ -1800,6 +1822,7 @@ h3, .title {
   border-radius: 4px;
   background-color: #fff;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
   transition: all 200ms; }
   .service-box .service-box, .service-box .title, .service-box .text {
     display: block;
@@ -1819,6 +1842,18 @@ h3, .title {
       color: #26af5f; }
     .service-box:hover .text, .service-box:focus .text, .service-box:active .text {
       color: #666666; }
+
+.image-effect {
+  display: block;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 200ms; }
+  .image-effect:hover, .image-effect:focus, .image-effect:active {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); }
 
 .slick-arrow {
   border: 0;

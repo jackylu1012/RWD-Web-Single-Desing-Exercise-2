@@ -1,0 +1,13 @@
+.image-effect{
+    display: block;
+    margin-bottom: 30px;
+    @include border-radius;
+    background-color: $white;
+    @include box-shadow(0, 3px, 6px, rgba($black, .1));
+    cursor: pointer;
+    transition: all $transition-speed-fast;
+    @include on-event{
+        transform: translateY(-3px);
+        @include box-shadow(0, 8px, 15px, rgba($black, .15));
+    }
+}

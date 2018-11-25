@@ -26,6 +26,13 @@
   margin-top: 30px;
 }
 
+.content-mar{
+  margin-top: 30px;
+  @include mq(md){
+      margin-top: 100px;
+  }
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -108,11 +115,11 @@ h3, .title{
 }
 
 .padding-fluid{
-  padding-top: $padding*3;
-  padding-bottom: $padding*3;
+  padding-top: $padding*6;
+  padding-bottom: $padding*6;
   @include mq(md){
-    padding-top: $padding*7;
-    padding-bottom: $padding*7;
+    padding-top: $padding*9;
+    padding-bottom: $padding*9;
   }
   @include mq(xl){
     padding-top: $padding*12;
