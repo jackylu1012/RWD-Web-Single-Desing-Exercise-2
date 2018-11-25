@@ -26,3 +26,9 @@
     }
 }
 
+@mixin gradient($start-angle:0deg, $start-color: $black, $start: 0%, $end-color: $white, $end: 35% ){
+    background: linear-gradient($start-angle, $start-color $start, $end-color $end); 
+    background: -moz-linear-gradient($start-angle, $start-color $start, $end-color $end); 
+    background: -webkit-linear-gradient($start-angle, $start-color $start, $end-color $end); 
+    background: -o-linear-gradient($start-angle, $start-color $start, $end-color $end);  
+}

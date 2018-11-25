@@ -124,6 +124,20 @@ h3, .title{
     padding-bottom: $padding*12;
   }
 }
+
+.padding-sm-fluid{
+  padding-top: $padding*3;
+  padding-bottom: $padding*3;
+  @include mq(md){
+    padding-top: $padding*4.5;
+    padding-bottom: $padding*4.5;
+  }
+  @include mq(xl){
+    padding-top: $padding*6;
+    padding-bottom: $padding*6;
+  }
+}
+
 .padding-bottom-fluid{
   padding-bottom: $padding*3;
   @include mq(md){

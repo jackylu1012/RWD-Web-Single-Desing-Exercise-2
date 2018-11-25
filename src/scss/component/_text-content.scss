@@ -18,4 +18,15 @@
             color: $gray-20;
         }
     }
+    .business-title{
+        margin-bottom: 20px;
+        font-size: 32px;
+        letter-spacing: 2px;
+        color: $gray-30;
+        font-family: "Montserrat-Black";
+        font-weight: 900;
+        @include mq(md){
+            font-size: 50px;
+        }
+    }
 }

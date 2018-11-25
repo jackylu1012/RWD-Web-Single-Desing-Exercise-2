@@ -1,0 +1,49 @@
+.parent-content{
+    padding-left: 40px;
+    padding-right: 40px;
+    @include mq(md){
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .parent-img{
+        position: relative;
+        display: inline-block;
+        margin-bottom: 20px;
+        width: 35%;
+        height: 40px;
+        &:nth-child(even){
+            float: right;
+        }
+        @include mq(md){
+            width: 100px;
+            margin-bottom: 0;
+            &:nth-child(even){
+                float: none;
+            }
+        }
+        img{
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            width: 100%;
+        }
+        .one{
+            opacity: 1;
+        }
+        .two{
+            opacity: 0;
+        }
+        @include on-event{
+            .one{
+                opacity: 0;
+            }
+            .two{
+                opacity: 1;
+            }
+        }
+    }
+}

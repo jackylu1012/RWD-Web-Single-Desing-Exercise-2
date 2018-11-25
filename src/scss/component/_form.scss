@@ -1,0 +1,72 @@
+.form-bg{
+    @extend .review-bg;
+    background-image: url('#{$img-url}/contact-bg.jpg');
+}
+
+.contact-warap{
+    .title{
+        margin-bottom: 70px;
+        color: $gray-90;
+        font-size: 40px;
+        font-family: "Montserrat-SemiBold";
+        font-weight: 700;
+    }
+}
+
+.contact-form{
+    
+}
+
+.contact-info{
+    display: block;
+    padding: 40px 60px;
+    width: 100%;
+    background: $white;
+    @include border-radius;
+    @include box-shadow(0, 3px, 6px, rgba($black, .1));
+    .title{
+        color: $gray-50;
+    }
+    .info-links{
+        display: block;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li{
+            display: flex;
+            align-items: flex-start;
+            width: 100%;
+            margin-bottom: 40px;
+            &:nth-last-child(1){
+                // margin-bottom: 0;
+            }
+            &:nth-child(1){
+                i{
+                    margin-top: 8px;
+                }
+            }
+            i, a{
+                display: inline-block;
+            }
+            i{
+                margin-top: 4px;
+                margin-right: 30px;
+                font-size: 24px;
+                color: $primary;
+                
+            }
+            a{
+                width: calc(100% - 70px);
+                font-size: 20px;
+                color: $gray-30;
+                transition: color $transition-speed-fast;
+                font-family: "Montserrat-Medium";
+                font-weight: 400;
+                word-wrap:break-word;
+                @include on-event{
+                    color: $primary;
+                }
+            }
+        }
+    }
+}

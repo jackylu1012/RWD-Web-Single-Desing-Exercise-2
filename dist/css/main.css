@@ -1565,6 +1565,18 @@ h3, .title {
       padding-top: 120px;
       padding-bottom: 120px; } }
 
+.padding-sm-fluid {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  @media (min-width: 767px) {
+    .padding-sm-fluid {
+      padding-top: 45px;
+      padding-bottom: 45px; } }
+  @media (min-width: 1199px) {
+    .padding-sm-fluid {
+      padding-top: 60px;
+      padding-bottom: 60px; } }
+
 .padding-bottom-fluid {
   padding-bottom: 30px; }
   @media (min-width: 767px) {
@@ -1808,6 +1820,16 @@ h3, .title {
     line-height: 1.875; }
   .text-content--secondary .title {
     color: #333333; }
+  .text-content .business-title {
+    margin-bottom: 20px;
+    font-size: 32px;
+    letter-spacing: 2px;
+    color: #4d4d4d;
+    font-family: "Montserrat-Black";
+    font-weight: 900; }
+    @media (min-width: 767px) {
+      .text-content .business-title {
+        font-size: 50px; } }
 
 .service-box {
   display: block;
@@ -1884,12 +1906,23 @@ h3, .title {
     margin-right: 10px; }
     .social-content li a {
       display: block;
-      color: #26af5f;
+      color: #b3b3b3;
       transition: color 200ms; }
-      .social-content li a:hover, .social-content li a:focus, .social-content li a:active {
-        color: #4ad885; }
+  .social-content-member li a {
+    color: #26af5f; }
+    .social-content-member li a:hover, .social-content-member li a:focus, .social-content-member li a:active {
+      color: #4ad885; }
+  .social-content-business li {
+    margin-left: 15px;
+    margin-right: 15px; }
+    @media (min-width: 767px) {
+      .social-content-business li {
+        margin-left: 20px;
+        margin-right: 20px; } }
+    .social-content-business li a:hover, .social-content-business li a:focus, .social-content-business li a:active {
+      color: #808080; }
 
-.review-bg {
+.review-bg, .form-bg {
   width: 100%;
   height: auto;
   background-image: url("/images/review-bg.jpg");
@@ -1952,6 +1985,157 @@ h3, .title {
     font-family: "Montserrat-Light";
     font-weight: 100;
     line-height: 1.875; }
+
+.parent-content {
+  padding-left: 40px;
+  padding-right: 40px; }
+  @media (min-width: 767px) {
+    .parent-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 0;
+      padding-right: 0; } }
+  .parent-content .parent-img {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 35%;
+    height: 40px; }
+    .parent-content .parent-img:nth-child(even) {
+      float: right; }
+    @media (min-width: 767px) {
+      .parent-content .parent-img {
+        width: 100px;
+        margin-bottom: 0; }
+        .parent-content .parent-img:nth-child(even) {
+          float: none; } }
+    .parent-content .parent-img img {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 100%; }
+    .parent-content .parent-img .one {
+      opacity: 1; }
+    .parent-content .parent-img .two {
+      opacity: 0; }
+    .parent-content .parent-img:hover .one, .parent-content .parent-img:focus .one, .parent-content .parent-img:active .one {
+      opacity: 0; }
+    .parent-content .parent-img:hover .two, .parent-content .parent-img:focus .two, .parent-content .parent-img:active .two {
+      opacity: 1; }
+
+.card-content {
+  display: block;
+  background: #fff;
+  border-radius: 4px; }
+  .card-content .card-head {
+    position: relative;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    overflow: hidden; }
+    .card-content .card-head img {
+      width: 100%; }
+  .card-content .card-body, .card-content .card-footer {
+    padding: 30px; }
+  .card-content .card-body {
+    padding-bottom: 0; }
+    .card-content .card-body .title {
+      margin-bottom: 30px;
+      color: #666666;
+      font-weight: inherit;
+      font-size: 24px;
+      letter-spacing: 1px; }
+    .card-content .card-body .text {
+      font-size: .85rem;
+      color: #999999;
+      font-family: "Montserrat-Regular";
+      font-weight: 300;
+      line-height: 1.875; }
+  .card-content .card-footer .info-content {
+    display: inline-block;
+    width: 49%; }
+    .card-content .card-footer .info-content i, .card-content .card-footer .info-content span {
+      display: inline-block; }
+    .card-content .card-footer .info-content i {
+      color: #26af5f;
+      margin-right: 10px; }
+    .card-content .card-footer .info-content span {
+      font-size: .85rem;
+      color: #999999;
+      font-family: "Montserrat-Regular";
+      font-weight: 300; }
+    .card-content .card-footer .info-content:nth-last-child(1) {
+      float: right;
+      text-align: right; }
+
+.gradation-cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 0%, rgba(255, 255, 255, 0) 35%);
+  background: -moz-linear-gradient(90deg, rgba(0, 0, 0, 0.3) 0%, rgba(255, 255, 255, 0) 35%);
+  background: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.3) 0%, rgba(255, 255, 255, 0) 35%);
+  background: -o-linear-gradient(90deg, rgba(0, 0, 0, 0.3) 0%, rgba(255, 255, 255, 0) 35%); }
+
+.copyright-content {
+  text-align: center; }
+  .copyright-content p {
+    color: #fff;
+    font-family: "Montserrat-Regular";
+    letter-spacing: 1px; }
+
+.form-bg {
+  background-image: url("/images/contact-bg.jpg"); }
+
+.contact-warap .title {
+  margin-bottom: 70px;
+  color: #e6e6e6;
+  font-size: 40px;
+  font-family: "Montserrat-SemiBold";
+  font-weight: 700; }
+
+.contact-info {
+  display: block;
+  padding: 40px 60px;
+  width: 100%;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); }
+  .contact-info .title {
+    color: #808080; }
+  .contact-info .info-links {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .contact-info .info-links li {
+      display: flex;
+      align-items: flex-start;
+      width: 100%;
+      margin-bottom: 40px; }
+      .contact-info .info-links li:nth-child(1) i {
+        margin-top: 8px; }
+      .contact-info .info-links li i, .contact-info .info-links li a {
+        display: inline-block; }
+      .contact-info .info-links li i {
+        margin-top: 4px;
+        margin-right: 30px;
+        font-size: 24px;
+        color: #26af5f; }
+      .contact-info .info-links li a {
+        width: calc(100% - 70px);
+        font-size: 20px;
+        color: #4d4d4d;
+        transition: color 200ms;
+        font-family: "Montserrat-Medium";
+        font-weight: 400;
+        word-wrap: break-word; }
+        .contact-info .info-links li a:hover, .contact-info .info-links li a:focus, .contact-info .info-links li a:active {
+          color: #26af5f; }
 
 .slick-arrow {
   border: 0;

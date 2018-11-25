@@ -10,10 +10,32 @@
         margin-right: 10px;
         a{
             display: block;
-            color: $primary;
+            color: $gray-70;
             transition: color $transition-speed-fast;
-            @include on-event{
-                color: lighten($primary, 15%);
+        }
+    }
+    &-member{
+        li{
+            a{
+                color: $primary;
+                @include on-event{
+                    color: lighten($primary, 15%);
+                }
+            }
+        }
+    }
+    &-business{
+        li{
+            margin-left: 15px;
+            margin-right: 15px;
+            @include mq(md){
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+            a{
+                @include on-event{
+                    color: $gray-50;
+                }
             }
         }
     }
