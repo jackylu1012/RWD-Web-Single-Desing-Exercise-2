@@ -1,0 +1,76 @@
+.review-bg{
+    width: 100%;
+    height: auto;
+    background-image: url('#{$img-url}/review-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+.review-slider{
+    display: block;
+    padding: 40px;
+    width: 100%;
+    text-align: center;
+    background: $white;
+    @include border-radius;
+    @include box-shadow(0, 3px, 6px, rgba($black, .1));
+    // slick
+    .slick-dots{
+        position: relative;
+        bottom: 0;
+        li{
+            display: inline-block;
+            margin: 0 5px;
+            button{
+                background-color: rgba($primary, .5);
+            }
+            &.slick-active{
+                button{
+                    background-color: $primary;
+                }
+            }
+        }
+    }
+}
+.review-item{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    @include mq(md){
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    @include mq(xl){
+        padding-right: 80px;
+        padding-left: 80px;
+    }
+    .review-clip{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        width: 180px;
+        height: 180px;
+        padding: 6px;
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        background: $primary;
+        overflow: hidden;
+        .review-img{
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            img{
+                width: 100%;
+                padding: 1px;
+            }
+        }
+    }
+    .review-text{
+        color: $gray-50;
+        font-size: 1rem;
+        font-family: "Montserrat-Light";
+        font-weight: 100;
+        line-height: $line-height-lg;
+    }
+}

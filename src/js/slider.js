@@ -8,4 +8,13 @@ export default function slider(){
         dots: true,
         infinite: true
     });
+    $('.review-slider').slick({
+        slidesToShow: 1,
+        adaptiveHeight: false,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        arrows: false,
+        dots: true,
+        infinite: true
+    });
 }

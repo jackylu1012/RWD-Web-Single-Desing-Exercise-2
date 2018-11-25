@@ -1527,25 +1527,16 @@ p {
   width: 100%; }
 
 .margin-fluid {
-  margin-top: 30px;
-  margin-bottom: 30px; }
+  margin-top: 50px;
+  margin-bottom: 50px; }
   @media (min-width: 767px) {
     .margin-fluid {
-      margin-top: 65px;
-      margin-bottom: 65px; } }
+      margin-top: 75px;
+      margin-bottom: 75px; } }
   @media (min-width: 1199px) {
     .margin-fluid {
       margin-top: 100px;
       margin-bottom: 100px; } }
-
-.margin-top-fluid {
-  margin-top: 30px; }
-  @media (min-width: 767px) {
-    .margin-top-fluid {
-      margin-top: 65px; } }
-  @media (min-width: 1199px) {
-    .margin-top-fluid {
-      margin-top: 100px; } }
 
 h3, .title {
   color: #26af5f; }
@@ -1897,6 +1888,70 @@ h3, .title {
       transition: color 200ms; }
       .social-content li a:hover, .social-content li a:focus, .social-content li a:active {
         color: #4ad885; }
+
+.review-bg {
+  width: 100%;
+  height: auto;
+  background-image: url("/images/review-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center; }
+
+.review-slider {
+  display: block;
+  padding: 40px;
+  width: 100%;
+  text-align: center;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); }
+  .review-slider .slick-dots {
+    position: relative;
+    bottom: 0; }
+    .review-slider .slick-dots li {
+      display: inline-block;
+      margin: 0 5px; }
+      .review-slider .slick-dots li button {
+        background-color: rgba(38, 175, 95, 0.5); }
+      .review-slider .slick-dots li.slick-active button {
+        background-color: #26af5f; }
+
+.review-item {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  @media (min-width: 767px) {
+    .review-item {
+      padding-right: 40px;
+      padding-left: 40px; } }
+  @media (min-width: 1199px) {
+    .review-item {
+      padding-right: 80px;
+      padding-left: 80px; } }
+  .review-item .review-clip {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 180px;
+    height: 180px;
+    padding: 6px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    background: #26af5f;
+    overflow: hidden; }
+    .review-item .review-clip .review-img {
+      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); }
+      .review-item .review-clip .review-img img {
+        width: 100%;
+        padding: 1px; }
+  .review-item .review-text {
+    color: #808080;
+    font-size: 1rem;
+    font-family: "Montserrat-Light";
+    font-weight: 100;
+    line-height: 1.875; }
 
 .slick-arrow {
   border: 0;

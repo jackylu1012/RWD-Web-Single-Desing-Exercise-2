@@ -80,25 +80,15 @@
 }
 // container 的 padding
 .margin-fluid{
-  margin-top: $padding*3;
-  margin-bottom: $padding*3;
+  margin-top: $padding*5;
+  margin-bottom: $padding*5;
   @include mq(md){
-    margin-top: $padding*6.5;
-    margin-bottom: $padding*6.5;
+    margin-top: $padding*7.5;
+    margin-bottom: $padding*7.5;
   }
   @include mq(xl){
     margin-top: $padding*10;
     margin-bottom: $padding*10;
-  }
-}
-
-.margin-top-fluid{
-  margin-top: $padding*3;
-  @include mq(md){
-    margin-top: $padding*6.5;
-  }
-  @include mq(xl){
-    margin-top: $padding*10;
   }
 }
 
