@@ -1487,6 +1487,10 @@ p {
     .content-mar {
       margin-top: 100px; } }
 
+.content-padd {
+  padding-left: 10px;
+  padding-right: 10px; }
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -1518,6 +1522,9 @@ p {
 
 .d-block {
   display: block; }
+
+.w-100 {
+  width: 100%; }
 
 .margin-fluid {
   margin-top: 30px;
@@ -1811,10 +1818,6 @@ h3, .title {
   .text-content--secondary .title {
     color: #333333; }
 
-.service-content {
-  padding-left: 10px;
-  padding-right: 10px; }
-
 .service-box {
   display: block;
   padding: 35px;
@@ -1854,6 +1857,46 @@ h3, .title {
   .image-effect:hover, .image-effect:focus, .image-effect:active {
     transform: translateY(-3px);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); }
+
+.member-box {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer; }
+  .member-box .member-img img {
+    width: 100%; }
+  .member-box .member-text {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    width: 100%;
+    padding: 20px 30px 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: bottom 200ms; }
+    .member-box .member-text .title {
+      color: #333333;
+      margin-bottom: 15px; }
+  .member-box:hover .member-text, .member-box:focus .member-text, .member-box:active .member-text {
+    bottom: 0; }
+
+.social-content {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center; }
+  .social-content li {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px; }
+    .social-content li a {
+      display: block;
+      color: #26af5f;
+      transition: color 200ms; }
+      .social-content li a:hover, .social-content li a:focus, .social-content li a:active {
+        color: #4ad885; }
 
 .slick-arrow {
   border: 0;

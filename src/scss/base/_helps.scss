@@ -33,6 +33,11 @@
   }
 }
 
+.content-padd{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -70,6 +75,9 @@
   display: block;
 }
 
+.w-100{
+  width: 100%;
+}
 // container 的 padding
 .margin-fluid{
   margin-top: $padding*3;
