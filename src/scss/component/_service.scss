@@ -1,0 +1,41 @@
+.service-content{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 30px;
+    @include mq(md){
+        margin-top: 100px;
+    }
+}
+.service-box{
+    display: block;
+    padding: 35px;
+    text-align: center;
+    @include border-radius;
+    background-color: $white;
+    @include box-shadow(0, 3px, 6px, rgba($black, .1));
+    transition: all $transition-speed-fast;
+    .service-box, .title, .text{
+        display: block;
+        font-weight: 400;
+        transition: color $transition-speed-fast;
+    }
+    .title{
+        margin-top: 20px;
+        margin-bottom: 15px;
+        color: $gray-30;
+    }
+    .text{
+        color: $gray-50;
+        line-height: $line-height-lg;
+    }
+    @include on-event{
+        transform: translateY(-3px);
+        @include box-shadow(0, 8px, 15px, rgba($black, .15));
+        .title{
+            color: $primary;
+        }
+        .text{
+            color: $gray-40;
+        }
+    }
+}

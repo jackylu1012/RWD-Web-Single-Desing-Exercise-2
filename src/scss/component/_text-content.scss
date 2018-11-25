@@ -1,0 +1,19 @@
+.text-content{
+    text-align: center;
+    .title{
+        margin-bottom: 15px;
+        color: $title-color;
+        font-weight: inherit;
+        letter-spacing: 2px;
+    }
+    .text{
+        color: $gray-50;
+        font-weight: inherit;
+        line-height: $line-height-lg;
+    }
+    &--secondary{
+        .title{
+            color: $gray-20;
+        }
+    }
+}

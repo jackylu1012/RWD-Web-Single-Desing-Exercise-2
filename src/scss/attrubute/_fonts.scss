@@ -9,6 +9,7 @@
         url("#{$font-url}/Montserrat/Montserrat-Light.woff2") format("woff2"); /* Modern Browsers */
     font-weight: normal;
     font-style: normal;
+    font-weight: 100;
 }
 
 @font-face {
@@ -21,6 +22,7 @@
       url("#{$font-url}/Montserrat/Montserrat-Medium.woff") format("woff"), /* Modern Browsers */
       url("#{$font-url}/Montserrat/Montserrat-Medium.woff2") format("woff2"); /* Modern Browsers */
     font-weight: normal;
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -34,6 +36,7 @@
       url("#{$font-url}/Montserrat/Montserrat-Regular.woff") format("woff"), /* Modern Browsers */
       url("#{$font-url}/Montserrat/Montserrat-Regular.woff2") format("woff2"); /* Modern Browsers */
     font-weight: normal;
+    font-weight: 300;
     font-style: normal;
 }
 
@@ -60,7 +63,7 @@
         url("#{$font-url}/Montserrat/Montserrat-Bold.ttf") format("truetype"), /* Safari, Android, iOS */
         url("#{$font-url}/Montserrat/Montserrat-Bold.woff") format("woff"), /* Modern Browsers */
         url("#{$font-url}/Montserrat/Montserrat-Bold.woff2") format("woff2"); /* Modern Browsers */
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
 }
 
@@ -73,7 +76,7 @@
         url("#{$font-url}/Montserrat/Montserrat-Black.ttf") format("truetype"), /* Safari, Android, iOS */
         url("#{$font-url}/Montserrat/Montserrat-Black.woff") format("woff"), /* Modern Browsers */
         url("#{$font-url}/Montserrat/Montserrat-Black.woff2") format("woff2"); /* Modern Browsers */
-    font-weight: normal;
+    font-weight: 900;
     font-style: normal;
 }
 
@@ -86,6 +89,7 @@
       url("#{$font-url}/Roboto/Roboto-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
       url("#{$font-url}/Roboto/Roboto-Regular.woff") format("woff"), /* Modern Browsers */
       url("#{$font-url}/Roboto/Roboto-Regular.woff2") format("woff2"); /* Modern Browsers */
-    font-weight: normal;
+    // font-weight: normal;
+    font-weight: 300;
     font-style: normal;
   }

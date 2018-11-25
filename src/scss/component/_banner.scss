@@ -1,6 +1,8 @@
 .banner-wrap{
+    line-height: 0;
     .slider-item{
         position: relative;
+        overflow: hidden;
         img{
             width: 100%;
         }

@@ -62,7 +62,7 @@ h3, .h3 {
 }
 h4, .h4 {
     @include font-size($h4-font-sizes);
-    font-family: "Montserrat-SemiBold";
+    font-family: "Montserrat-Regular";
 }
 h5, .h5 {
     @include font-size($h5-font-sizes);
