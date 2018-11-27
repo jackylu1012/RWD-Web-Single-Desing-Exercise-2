@@ -1,6 +1,8 @@
 # RWD Single Web Cutting
 RWD Single Web Design Exercise
 
+Demo：<a href="http://jackylu.gq/lu/website/rwd-2/index.html" target="_blank">link</a>
+
 <!-- Demo：<a href="http://jackylu.byethost7.com/lu/website/rwd-1/index.html" target="_blank">link</a> -->
 
 Design Author：Md Atikur Rahman<br/>
