@@ -21,4 +21,27 @@
     @include on-event{
         transform: translateY(-3px);
     }
+    &-send{
+        display: block;
+        margin: 0 auto;
+        padding: 20px 60px;
+        border: 0;
+        color: $primary;
+        background: $white;
+        letter-spacing: 0;
+        font-size: 18px;
+        font-family: "Montserrat-Bold";
+        font-weight: bold;
+        @include box-shadow(0, 5px, 10px, rgba($black, .1));
+        transition: all $transition-speed-fast;
+        @include on-event{
+            background: $primary;
+            color: $white;
+            @include box-shadow(0, 8px, 15px, rgba($black, .15));
+        }
+        @include mq(md){
+            display: inline-block;
+            margin: 0;
+        }
+    }
 }

@@ -7,23 +7,114 @@
     .title{
         margin-bottom: 70px;
         color: $gray-90;
-        font-size: 40px;
+        font-size: 28px;
         font-family: "Montserrat-SemiBold";
         font-weight: 700;
+        @include mq(lg){
+            font-size: 40px;
+        }
     }
 }
 
+
+// contact form
 .contact-form{
+    display: block;
+    width: 100%;
+    margin-bottom: 60px;
+    @include mq(lg){
+        margin-bottom: 0;
+    }
+    .title{
+        margin-bottom: 40px;
+    }
+    .form-group{
+        display: block;
+        margin-bottom: 50px;
+        &.merge{
+            position: relative;
+            min-height: 80px;
+
+            label{
+                position: absolute;
+                top: 50%;
+                color: $gray-80;
+                transform: translateY(-50%);
+                i{
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+    label, input[type=text], textarea{
+        font-size: 20px;
+        color: $white;
+        font-family: "Montserrat-Regular";
+    }
+    input[type=text], textarea{
+        background: transparent;
+        border: 0;
+        border-bottom: 1px solid $gray-80;
+        outline: none;
+    }
     
+    label{
+        display: block;
+        left: 16px;
+        line-height: 80px;
+        z-index: 2;
+        i{
+            padding-right: 10px;
+            font-size: 30px;
+            color: $gray-80;
+            vertical-align: middle;
+            
+        }
+        .fa-stack{
+            position: relative;
+            width: auto;
+            i{
+                &.inverse{
+                    position: absolute;
+                    left: 18%;
+                    top: 25%;
+                    font-size: 16px;
+                    color: $gray-40; 
+                }
+            }
+        }
+    }
+    
+    input[type=text]{
+        position: absolute;
+        width: calc(100% - 30px);
+        height: 80px;
+        padding-left: 40px;
+        line-height: 80px;
+        z-index: 1;
+        @include input-placeholder{
+            color: $gray-80;
+            font-family: "Montserrat-Regular";
+        }
+    }
+    textarea{
+        width: 100%;
+        resize : none;
+    }
 }
 
+
+// contact info
 .contact-info{
     display: block;
-    padding: 40px 60px;
+    padding: 40px 20px;
     width: 100%;
     background: $white;
     @include border-radius;
     @include box-shadow(0, 3px, 6px, rgba($black, .1));
+    @include mq(md){
+        padding: 60px;
+    }
     .title{
         color: $gray-50;
     }
