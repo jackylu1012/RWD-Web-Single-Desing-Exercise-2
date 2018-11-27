@@ -25,6 +25,8 @@ $bar-spacing: 10px;
 	transform: translateY($bar-spacing);
 	background: $white;
     transition: $transition-fast;
+    margin-top: 10px;
+    z-index: 100;
     &:before, &:after{
         content: "";
         position: absolute;
@@ -41,6 +43,7 @@ $bar-spacing: 10px;
     }
     &.animate {
         background: rgba($black, 0);
+        
         &:after {
             top: 0;
             transform: rotate(45deg);

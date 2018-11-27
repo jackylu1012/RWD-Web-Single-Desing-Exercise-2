@@ -1,3 +1,4 @@
+
 .header-wrap{
     position: relative;
 }
@@ -6,9 +7,24 @@
     top: 15px;
     left: 50%;
     width: 100%;
-    transform: translateX(-50%);
+    transform: translate(-50%, 0px);
     z-index: 10;
     @include mq(md){
         top: 70px; 
+    }
+    &.sticky-top{
+        position: fixed;
+        background: $primary;
+        top: 0;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        transform: translate(-50%, 0px);
+        transition: transform $transition-speed-normal cubic-bezier(0.250, 0.100, 0.250, 1.000);
+        .menu-content{
+            top: 0;
+            @include mq(md){
+                padding-top: 7.5px;
+            }
+        }
     }
 }

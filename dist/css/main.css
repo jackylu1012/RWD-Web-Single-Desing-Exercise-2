@@ -1634,25 +1634,64 @@ h3, .title {
   top: 15px;
   left: 50%;
   width: 100%;
-  transform: translateX(-50%);
+  transform: translate(-50%, 0px);
   z-index: 10; }
   @media (min-width: 767px) {
     .header {
       top: 70px; } }
+  .header.sticky-top {
+    position: fixed;
+    background: #26af5f;
+    top: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    transform: translate(-50%, 0px);
+    transition: transform 600ms cubic-bezier(0.25, 0.1, 0.25, 1); }
+    .header.sticky-top .menu-content {
+      top: 0; }
+      @media (min-width: 767px) {
+        .header.sticky-top .menu-content {
+          padding-top: 7.5px; } }
+
+.fixed {
+  position: fixed;
+  z-index: 99; }
 
 .menu-content {
-  display: none; }
+  position: fixed;
+  display: block;
+  right: 0;
+  padding: 0 50px;
+  height: 100vh;
+  background: #26af5f;
+  top: -15px;
+  padding-top: 15px;
+  transform: translateX(150%);
+  transition: transform 600ms cubic-bezier(0.25, 0.1, 0.25, 1); }
   @media (min-width: 767px) {
     .menu-content {
-      display: block; } }
+      position: static;
+      display: block;
+      transform: translateX(0%);
+      background: transparent;
+      height: auto; } }
   .menu-content .menu {
     display: block;
-    float: right;
+    text-align: center;
     margin: 0;
+    margin-top: 100px;
     padding: 0;
     list-style: none; }
+    @media (min-width: 767px) {
+      .menu-content .menu {
+        float: right;
+        text-align: left;
+        margin-top: 0; } }
     .menu-content .menu li {
-      display: inline-block; }
+      display: block; }
+      @media (min-width: 767px) {
+        .menu-content .menu li {
+          display: inline-block; } }
       .menu-content .menu li a {
         position: relative;
         display: block;
@@ -1678,6 +1717,12 @@ h3, .title {
           top: 50%;
           height: 100%; }
 
+.fixed-menu {
+  position: fixed;
+  right: 0;
+  transform: translateX(0%);
+  transition: transform 600ms cubic-bezier(0.25, 0.1, 0.25, 1); }
+
 .menu-wrapper {
   float: right;
   width: 30px;
@@ -1698,7 +1743,9 @@ h3, .title {
   position: relative;
   transform: translateY(10px);
   background: #fff;
-  transition: all 200ms ease-in-out; }
+  transition: all 200ms ease-in-out;
+  margin-top: 10px;
+  z-index: 100; }
   .hamburger-menu:before, .hamburger-menu:after {
     content: "";
     position: absolute;

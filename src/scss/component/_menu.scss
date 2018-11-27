@@ -1,16 +1,41 @@
 .menu-content{
-    display: none;
+    position: fixed;
+    display: block;
+    right: 0;
+    padding: 0 50px;
+    height: 100vh;
+    background: $primary;
+    top: -15px;
+    padding-top: 15px;
+    transform: translateX(150%);
+    transition: transform $transition-speed-normal cubic-bezier(0.250, 0.100, 0.250, 1.000);
     @include mq(md){
+        position: static;
         display: block;
+        transform: translateX(0%);
+        background: transparent;
+        height: auto;
     }
     .menu{
         display: block;
-        float: right;
+        text-align: center;
         margin: 0;
+        margin-top: 100px;
         padding: 0;
         list-style: none;
+        @include mq(md){
+            float: right;
+            text-align: left;
+            margin-top: 0;
+        }
         li{
-            display: inline-block;
+            display: block;
+            @include mq(md){
+                display: inline-block;
+                a{
+
+                }
+            }
             a{
                 position: relative;
                 display: block;
@@ -40,6 +65,15 @@
                     }
                 }
             }
+            
         }
     }
+}
+
+.fixed-menu{
+    position: fixed;
+    right: 0;
+    transform: translateX(0%);
+    transition: transform $transition-speed-normal cubic-bezier(0.250, 0.100, 0.250, 1.000);
+    
 }
